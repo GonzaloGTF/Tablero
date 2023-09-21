@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let anchura = parseInt(prompt("Anchura del tablero:")), altura = parseInt(prompt("Altura del tablero:"));
+                 
+          for (altura; altura > 0; altura = altura - 1) {
+            
+            let tablero = ""
+
+            if (altura % 2 == 0) {
+              for (let par = anchura; par > 0; par = par - 1) {
+                  if (par % 2 == 0) {
+                  tablero = tablero + "X"
+                  }
+                  else {
+                  tablero = tablero + "O"
+                  } 
+              }
+            }
+
+            else {
+              for (let impar = anchura; impar > 0; impar = impar - 1) {
+                  if (impar % 2 == 0) {
+                  tablero = tablero + "O"
+                  }
+                  else {
+                  tablero = tablero + "Y"
+                  }
+                }
+            }
+
+            console.log(tablero);
+          }
+
+    </script>
+
+</body>
+</html>
